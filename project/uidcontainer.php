@@ -1,4 +1,1 @@
-<?php
-  $UIDresult='';
-  echo $UIDresult;
-?>
+<?php $UIDresult=''; echo $UIDresult; ?>

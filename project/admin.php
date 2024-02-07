@@ -6,8 +6,9 @@ endif;
 
 <?php
 	$Write="<?php $" . "UIDresult=''; " . "echo $" . "UIDresult;" . " ?>";
-	file_put_contents('uidContainer.php',$Write);
+	file_put_contents('uidcontainer.php',$Write);
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -174,7 +175,8 @@ endif;
           box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
         }
          .hours:hover{
-           box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+           
         }
         /*------------------------********************************-------------------------*/
 
@@ -442,16 +444,54 @@ endif;
 	}
 	 .readtag-container {
             background-color: white;
-         	
+         	display: grid;
+            grid-template-columns:1fr 1fr;
             border-radius: 8px;
             overflow: hidden;
-            width: 400px;
+            width: 600px;
+            height:370px;
             text-align: center;
             padding: 18px;
-            margin-left: 350px;
-            margin-top: 20px;
+            margin-left: 240px;
+            margin-top: 25px;
             position: absolute;
             box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+        }
+       .show-details1 .lable-1{
+            /* padding:90px; */
+             margin:100px; 
+            font-size:25px;
+
+        }
+        .show-details1 .lable-2{
+            margin-left:-50px;
+            margin-top:10px;
+            position: absolute;
+            font-size:25px;
+            
+
+        }
+        .show-details1 .lable-3{
+            font-size:25px;
+            margin-left:-50px;
+            margin-top:30px;
+            position: absolute;
+
+        }
+        .show-details1 .lable-4{
+            margin-top:50px;
+            margin-left:-50px;
+            position: absolute;
+            font-size:25px;
+
+        }
+        .show-details1 .lable-5{
+            margin-top:65px;
+            margin-left:-50px;
+            position: absolute;
+            font-size:25px;
+            font-size:25px;
+
         }
 
 	.readform td{
@@ -619,11 +659,12 @@ endif;
          
             border-radius: 8px;
             overflow: hidden;
-            width: 400px;
+            width: 90%;
+            height:65vh;
             text-align: center;
             padding: 18px;
-            margin-left: 350px;
-            margin-top: 10px;
+            margin:20px 25px;
+            margin-top: 20px;
             position: absolute;
             box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
         }
@@ -635,36 +676,94 @@ endif;
 
         .signup-form input,
         .signup-form select {
-            width: 100%;
-            padding: 6px;
+            
+            padding: 15px 150px;
             margin-bottom: 15px;
             border: 1px solid #071952;
             border-radius: 4px;
             box-sizing: border-box;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+
+        }
+        .getid{
+            
+            padding: 2px 130px;
+            margin-bottom: -15px;
+            border: 1px solid #071952;
+            border-radius: 4px;
+            box-sizing: border-box;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+
+        }
+        .signup-form .getid:focus{
+        background-color:#1f1f1f;
+        color:white;
+        }
+        
+        .signup-form input:focus{
+        background-color:#1f1f1f;
+        color:white;
         }
 
         .signup-form .role-dependent-input {
             display: none;
         }
 
-        .signup-form button {
+        .signup-form .reg-submit{
             width: 100%;
-            padding: 8px;
+            padding: 15px;
             background-color: #071952;
             color: #fff;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+            font-weight:bold;
+            opacity: 0.7;
+            transition:0.3s;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
 
         }
+        .signup-form .reg-submit:hover{
+            opacity:1;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
-        .signup-form button:hover {
+
+        }
+        .signup-form select{
+            padding: 15px 205px;
+            
+
+        }
+        .reg-reset{
+            padding: 15px 215px;
+            background-color:red;
+            cursor: pointer;
+            border:none;
+            font-weight:bold;
+            color: #fff;
+            opacity: 0.7;
+      transition:0.3s;
+
+
+}
+.reg-reset:hover{
+    background-color: red;
+    opacity:1;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+            
+
+
+}
+
+        /* .signup-form button:hover {
             background-color: #97FEED;
             color: #071952;
             box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-        }
+        } */
 
         .signup-form p {
             margin-top: 15px;
@@ -701,6 +800,7 @@ endif;
         border-collapse: collapse;
         background-color: white;
         margin: 15px;
+        display: none;
         box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
       }
       .bca2 th{
@@ -815,36 +915,82 @@ display:inline-block;
 
         }
         /*---------------------------------------------------------------*/
-         .form-control{
-  position:absolute;
- margin-left:40%;
- margin-top:-33px;
- padding:10px;
- width:300px;
- color:#071952;
- background-color: white;
- outline:none;
- border:none;
- box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
- border-radius:5px;
- }
- .form-control:focus{
- box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 
+ .find-student-detail{
+    background-color:white;
+    margin:30px 50px;
+    width: 90%;
+    height:65vh;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
  }
- .period1,.period2,.period3,.period4,.period5{
- color:white;
- font-size:18px;
- box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 
-  text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
- }
+  .find-student-detail input{
+      padding:15px 370px;
+      margin:13px;
+      border: 1px solid #071952;
+            border-radius: 4px;
+            box-sizing: border-box;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     } 
+     .find-student-detail input:focus{
+    background-color:#1f1f1f;
+    color:white;
+        
+     } 
+     
+    
+     .find-student-detail .reset{
+      padding:15px 100px;
+      margin:13px;
+      background-color: red;
+      border:none;
+      color:white;
+      font-weight:bold;
+      cursor: pointer;
+      opacity: 0.7;
+      transition:0.3s;
+     } 
+     .find-student-detail .reset:hover{
+        opacity: 1;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+
+     }
+ .find-student-detail .button{
+      padding:15px 300px;
+      margin:13px;
+      background-color:#071952;
+      border:none;
+      color:white;
+      font-weight:bold;
+      cursor: pointer;
+      opacity: 0.7;
+      transition:0.3s;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+     } 
+     .find-student-detail .button:hover{
+        opacity: 1;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        
+
+     }
+     .viewt{
+            height:40px;
+     }
+    
+     
    
         /*------------------------********************************-------------------------*/
 
     </style>
 </head>
 <body>
+<?php $UIDresult='';
+
+ $UIDresult=$UIDresult;
+
+?>
 	
 <!-------------------------------------------------body-container(start)---------------------------------------------------->
 
@@ -1025,59 +1171,63 @@ display:inline-block;
 		          <div id="self">
                     <div id="self2">
                         <h4 style="margin-left: 20px;">Readtag Form</h4>
-                        </div>
+                    </div>
                     <div id="self1">
-                        <div class="readtag-container">
-                                <h2>Readtag</h2>
-                                          <form>
-                                        <table class="readform">
-                                            <tr>
-                                                <td>
-                                                    <b>Student Details</b>
-                                                    </font>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <table class="readfrom">
-                                                        <tr>
-                                                          <td align="left" class="lf">Roll No</td>
-                                                            <td style="font-weight:bold">:</td>
-                                                            <td align="left">----------------</td>
-                                                        </tr>
-                                                         <tr>
-                                                            <td align="left" class="lf">Rfid No</td>
-                                                            <td style="font-weight:bold">:</td>
-                                                         <td align="left">----------------</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td align="left" class="lf">Name</td>
-                                                            <td style="font-weight:bold">:</td>
-                                                    <td align="left">----------------</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td align="left" class="lf">Gender</td>
-                                                            <td style="font-weight:bold">:</td>
-                                                             <td align="left">----------------</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td align="left" class="lf">Email</td>
-                                                            <td style="font-weight:bold">:</td>
-                                                            <td align="left">----------------</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Password</td>
-                                                            <td style="font-weight:bold">:</td>
-                                                             <td align="left">----------------</td>                              
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </form>
+                    <p id="getname" hidden></p>
+		            <!-- <br> -->
+   
+
+            <div class="readtag-container" id="show_user_data">
+            
+			 <form>
+				<table style="padding: 2px">
+                <p style="color:red;"><?php echo $msg; ?></p>
+
+					<tr>
+						<td style="background-color:#071952; color:white; padding:10px; box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;">
+							<b>Student Details</b>
+						</td>
+					</tr>
+					<tr>
+						<td >
+							<table style= "width:580px; height:300px; border:0; align:center; cellpadding:5;  cellspacing:0;">
+								<tr>
+									<td style="font-weight:bold; text-align:center; width:200px;" class="lf">RFID NO</td>
+									<td style="font-weight:bold; width:80px;">:</td>
+									<td style="text-align:left;" id="showid">------------------------------------</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold; text-align:center; width:200px;" class="lf">NAME</td>
+									<td style="font-weight:bold">:</td>
+									<td style="text-align:left;">------------------------------------</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold; text-align:center; width:200px;" class="lf">ROLL NO</td>
+									<td style="font-weight:bold">:</td>
+									<td style="text-align:left;">------------------------------------</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold; text-align:center; width:200px;" class="lf">EMAIL</td>
+									<td style="font-weight:bold">:</td>
+									<td style="text-align:left;">------------------------------------</td>
+								</tr>
+								<tr>
+									<td style="font-weight:bold; text-align:center; width:200px;" class="lf">GENDER</td>
+									<td style="font-weight:bold">:</td>
+									<td style="text-align:left;">------------------------------------</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+				</table>
+
+			</form>
+
 				</div>
-                        </div>
-                </div>
+
+            </div>
+
+        </div>
 
 
                 <!--registration details(start)-------------->
@@ -1087,22 +1237,26 @@ display:inline-block;
                         <h4 style="margin-left: 20px;">Registration Form</h4>
                         </div>
                     <div id="rigestration1">
+                    <p id="d1"></p>
+
                         <div class="signup-container">
                                 <h2>Registration</h2>
                                 <form class="signup-form"  onsubmit="insertForm()"  action="registerprocess.php" method="post">
-                                    <input type="text" placeholder="Full Name" name="n1"required>
-				    <input type="text" placeholder="ID" name="n2"required>
-                                    <input type="text" placeholder="ROLL NO" name="n3">
+                                <!-- <input type="text" id="getid" placeholder="Please Tag Your card" name="n2"required> -->
+                                   <textarea name="n2" id="getuid" class="getid" placeholder="Please Tag Your Card" required></textarea>
+                                <input type="text" placeholder="Full Name" name="n1" id="fn" required>
+                                    <input type="text" placeholder="Roll No" name="n3">
                                     <input type="email" placeholder="Email" name="n4" required>
-                                    <input type="text" placeholder="sample image id" name="n6" required>
+                                    <input type="text" placeholder="Sample Image Id" name="n6" required>
                                     <input type="password" placeholder="Password" name="n5" required>
                                         <select id="gender" name="gender">
                                             <option value="male">Male</option>
                                             <option value="female">Female</option>
                                            
                                         </select>
-
-                                    <button type="submit" name="b1">Submit</button>
+                                        
+                                        <button type="reset" name="r1" class="reg-reset">Reset</button><br><br>
+                                    <button type="submit" name="b1" class="reg-submit" id="handle">Submit</button>
                                 </form>
 
                         </div>
@@ -1114,61 +1268,23 @@ display:inline-block;
                 <div id="bca-attendancereport">
                     <div class="bca1">
                         <h4>Attendance List</h4>
-                        <input type="text" class="form-control" id="live_search1" autocomplete="off" placeholder="search.....">	
+                        <!--<input type="text" class="form-control" id="live_search1" autocomplete="off" placeholder="search.....">-->	
                     </div>
                     <div class="bca2" id="bbca">
-  			<table id="table1">
-                            <tr>
-                                <th>Name</th>
-				<th>RfidNo</th>
-                                <th>RollNo</th>
-                                <th>Date</th>
-                                <th>10-11</th>
-                                <th>11-12</th>
-				<th>12-1</th>
-				<th>2-3</th>
-				<th>3-4</th>
-				
-                            </tr>
-                            <?php
-			 include 'dbconnection.php';
-			 $sql = 'select * FROM attendance ORDER BY name ASC';
-			 $query = mysqli_query($connec,$sql);
-			 $num = mysqli_num_rows($query);
-			 if($num>0){
-				while($result=mysqli_fetch_assoc($query)){
-				$period1 = $result['period1'];
-				$period2 = $result['period2'];
-				$period3 = $result['period3'];
-				$period4 = $result['period4'];
-				$period5 = $result['period5'];
-			
-				
-                           echo '<tr>';
-                           echo '<td>'.$result['name'].'</td>';
-                           echo '<td>'.$result['rfidno'].'</td>';
-                           echo '<td>'.$result['rollno'].'</td>';
-                           echo '<td>'.$result['date'].'</td>';
-			   //echo '<td class="period1">'.$result['period1'].'</td>';
-			   //echo '<td class="period2">'.$result['period2'].'</td>';
-			   //echo '<td class="period3">'.$result['period3'].'</td>';
-			   //echo '<td class="period4">'.$result['period4'].'</td>';
-			    //echo '<td class="period5">'.$result['period5'].'</td>';
-          			
-          		   echo '<td class="period1" style="' . ($result['period1'] == 'present' ? 'background-color: green;' : 'background-color:red;') . '">' . $result['period1'] . '</td>';
-        echo '<td class="period2" style="' . ($result['period2'] == 'present' ? 'background-color: green;' : 'background-color:red;') . '">' . $result['period2'] . '</td>';
-        echo '<td class="period3" style="' . ($result['period3'] == 'present' ? 'background-color: green;' : 'background-color:red;') . '">' . $result['period3'] . '</td>';
-        echo '<td class="period4" style="' . ($result['period4'] == 'present' ? 'background-color: green;' : 'background-color:red;') . '">' . $result['period4'] . '</td>';
-        echo '<td class="period5" style="' . ($result['period5'] == 'present' ? 'background-color: green;' : 'background-color:red;') . '">' . $result['period5'] . '</td>';
+  			  
+                       
+                         <div class="find-student-detail" id="find-student-detail"><br><br><br>
+                            <form method="post" action="attendance-list.php">
+                            <lable style="margin-left:15px;">Name</lable>
+                            <input type="text" class="find" name="find-n1" placeholder="NAME" required><br>
+                            <lable style="margin-left:15px;">Roll No</lable>
+                            <input type="text" class="find" placeholder="ROLL NO" name="find-n2" required><br><br>
+                            <button type="reset" class="reset">Reset</button>
+                            <button type="submit" class="button" name="find-s1" id="find-s">Submit</button>
 
-        echo '</tr>';			
-                           echo '</tr>';
-				}
-			}
-			?>
 
-                        </table>
-                         <div id="search_result1"></div>
+                            </form>   
+                         </div>
                     </div>
                 </div>
       
@@ -1215,45 +1331,76 @@ display:inline-block;
     }
   </script>
 
+
+
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$("#live_search1").keyup(function(){
-		var input = $(this).val();
-		if(input != ""){
-		    $("#table1").css("display","none");
-		
-		    $.ajax({
+ 
+<script>
+$(document).ready(function(){
+    $("#getid").load("uidcontainer.php");
+    $("#getuid").load("uidcontainer.php");
+    $("#getname").load("uidcontainer.php");
 
-			url:"attendancesearch.php",
-			method:"POST",
-			data:{input:input},
-		
-			success:function(data){
-				$("#search_result1").html(data);
-				$("#search_result1").css("display","block");
-		  	}
+    setInterval(function(){
+        $("#getid").load("uidcontainer.php");
+        $("#getuid").load("uidcontainer.php");
+        $("#getname").load("uidcontainer.php");
 
-	             });
-		}
-		else{
-		 $("#search_result1").css("display","none");
-		 $("#table1").css("display","block");
-		}
-	});
+
+    }, 500);
 });
-	</script>
+</script>
 
-	<!--<script>
-	$(document).ready(function(){
-		if($period1 == 'period'){
-				  $('.period1').css("background-color","red");
-				  
+<script>
+			var myVar = setInterval(myTimer, 1000);
+			var myVar1 = setInterval(myTimer1, 1000);
+			var oldID="";
+			clearInterval(myVar1);
+
+			function myTimer() {
+				var getID=document.getElementById("getname").innerHTML;
+                // alert(getID)
+				oldID=getID;
+				if(getID!="") {
+					myVar1 = setInterval(myTimer1, 500);
+                   showUser(getID);
+					
+					clearInterval(myVar);
 				}
-	});
-	
-	</script>-->
-	
-	
+			}
+			
+			function myTimer1() {
+				var getID=document.getElementById("getname").innerHTML;
+				if(oldID!=getID) {
+					myVar = setInterval(myTimer, 500);
+					clearInterval(myVar1);
+				}
+			}
+			
+			function showUser(str) {
+				if (str == "") {
+					document.getElementById("show_user_data").innerHTML = "";
+					return;
+				} else {
+					if (window.XMLHttpRequest) {
+						// code for IE7+, Firefox, Chrome, Opera, Safari
+						xmlhttp = new XMLHttpRequest();
+					} else {
+						// code for IE6, IE5
+						xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+					}
+					xmlhttp.onreadystatechange = function() {
+						if (this.readyState == 4 && this.status == 200) {
+							document.getElementById("show_user_data").innerHTML = this.responseText;
+						}
+					};
+					xmlhttp.open("GET","readtaguserdata.php?id="+str,true);
+					xmlhttp.send();
+				}
+			}      
+    
+
+           
+</script>    
 </body>
 </html>

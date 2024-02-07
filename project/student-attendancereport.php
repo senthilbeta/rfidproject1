@@ -104,14 +104,14 @@
            
 
                         
-  			  // Calculate the difference in seconds
+  			 
   			  $dateDifference = $endDate - $startDate;
 
   			  $daysDifference = floor($dateDifference / (60 * 60 * 24));
 
-  			  // Check if the selected date range is within 10 days
+  			 
   			  if ($daysDifference <= 10 && $daysDifference >= 0) {
-			      // Dates are valid, perform your operation here
+			     
       			    echo "Start Date: " . date('Y-m-d', $startDate)."<br>";
     			    echo "End Date: " . date('Y-m-d', $endDate);
     			    
@@ -119,7 +119,10 @@
 			if (isset($_POST['report'])) {
 			
    			 $startDate = strtotime($_POST["start_date"]);
-  			 $endDate = strtotime($_POST["end_date"]);	
+  			 $endDate = strtotime($_POST["end_date"]);
+  			/* $datecount = "SELECT DATEDIFF('$endDate','$startDate')";
+  			 if($datecount <= 10)
+  			 {*/
 			$sql = "SELECT * FROM attendance WHERE name = '{$_SESSION['user_name']}'";
 			
 			 $query = mysqli_query($connec,$sql);
@@ -158,20 +161,23 @@
 
         echo '</tr>';			
                          
+                         
+                         //----------------
 				}
 			}
-			
+		
 
-      			  // Additional operations can be added here based on your requirements
+      			  
   			  } else {
-     			   // Handle the case when the date range is more than 10 days or negative
+     			
       			   echo "Please select a date range within 10 days.";
   			  }	
-			 } else {
-  			  // Handle the case when the form is not submitted via POST method.
+			  }else {
+  			  
  			   echo "Form not submitted.";
 			
 			}
+		
 	
 			?>
 

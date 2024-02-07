@@ -168,18 +168,33 @@
  }
  .form-control{
   position:absolute;
- margin-left:60%;
+ margin-left:52%;
  margin-top:-50px;
  padding:10px;
+ width: 300px;
  color:#071952;
  background-color: white;
  outline:none;
  border:none;
  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
- border-radius:5px;
+ border-radius:20px;
  }
   .form-control:focus{
- box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background-color:#1f1f1f;
+ border-radius:50px;
+    
+ color:white;
+ }
+ .search-img{
+height:38px;
+width:39px;
+border-radius:50px;
+position:absolute;
+margin-left:73%;
+ margin-top:-51px;
+
+
  }
    </style>
  </head>
@@ -191,7 +206,7 @@
                          <div id="toast-message"></div>
                          <div id="toast-message1"></div>
                          <div id="toast-message2"></div>
-                         <input type="text" class="form-control" id="live_search" autocomplete="off" placeholder="search.....">
+                         <input type="text" class="form-control" id="live_search" autocomplete="off" placeholder="search....." ><img src="searchicon.png" class="search-img">
                          <a class="bca-back-button" href="admin.php#attendance">back</a>
                     </div>
                     <div class="bca2" id="bbca">

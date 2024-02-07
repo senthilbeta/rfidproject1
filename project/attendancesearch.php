@@ -81,10 +81,10 @@ if(isset($_POST['input'])){
 	$result = mysqli_query($connec, $query);
 	
 	if(mysqli_num_rows($result)>0){?>
-	<table id="table">
+	                    <table id="table">
                             <tr>
                                 <th>Name</th>
-				<th>RfidNo</th>
+				                        <th>RfidNo</th>
                                 <th>RollNo</th>
                                 <th>Date</th>
                                 <th>10-11</th>

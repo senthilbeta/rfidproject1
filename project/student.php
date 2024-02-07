@@ -725,60 +725,60 @@ text-align:center;
                                 <th id="date">Date</th>
                                 <th id="date">10-11</th>
                                 <th id="date">11-12</th>
-				<th id="date">12-1</th>
-				<th id="date">2-3</th>
-				<th id="date">3-4</th>
+				                        <th id="date">12-1</th>
+				                        <th id="date">2-3</th>
+				                        <th id="date">3-4</th>
 				
                             </tr>
                             <tr>	
                            	<td id="date">Monday</td>
-                                <td id="date">10-11</td>
-                                <td id="date">11-12</td>
-				<td id="date">12-1</td>
-				<td id="date">2-3</td>
-				<td id="date">3-4</td>
-			    </tr>
-			     <tr>	
+                                <td id="date">Mobile Computing</td>
+                                <td id="date">Computer Network</td>
+				                        <td id="date">Mobile Computing</td>
+				                        <td id="date">Soft Skill</td>
+				                        <td id="date">Computer Network</td>
+			                    </tr>
+			                    <tr>	
                            	<td id="date">Tuesday</td>
-                                <td id="date">10-11</td>
-                                <td id="date">11-12</td>
-				<td id="date">12-1</td>
-				<td id="date">2-3</td>
-				<td id="date">3-4</td>
-			    </tr>
-			     <tr>	
+                            <td id="date">SEC</td>
+                            <td id="date">Elective</td>
+				                    <td id="date">Project LAB</td>
+				                    <td id="date">Computer Network</td>
+				                    <td id="date">Mobile Computing</td>
+			                    </tr>
+			                    <tr>	
                            	<td id="date">Wednesday</td>
-                                <td id="date">10-11</td>
-                                <td id="date">11-12</td>
-				<td id="date">12-1</td>
-				<td id="date">2-3</td>
-				<td id="date">3-4</td>
-			    </tr>
-			     <tr>	
+                            <td id="date">Computer Network</td>
+                            <td id="date">Project LAB</td>
+				                    <td id="date">Elective</td>
+				                    <td id="date">Mobile Computing</td>
+				                    <td id="date">MC LAB</td>
+			                     </tr>
+			                    <tr>	
                            	<td id="date">Thursday</td>
-                                <td id="date">10-11</td>
-                                <td id="date">11-12</td>
-				<td id="date">12-1</td>
-				<td id="date">2-3</td>
-				<td id="date">3-4</td>
-			    </tr>
-			     <tr>	
+                            <td id="date">Soft Skill</td>
+                            <td id="date">Computer Network</td>
+				                    <td id="date">Mobile Computing</td>
+				                    <td id="date">Project LAB</td>
+				                    <td id="date">Elective</td>
+			                    </tr>
+			                    <tr>	
                            	<td id="date">Friyday</td>
-                                <td id="date">10-11</td>
-                                <td id="date">11-12</td>
-				<td id="date">12-1</td>
-				<td id="date">2-3</td>
-				<td id="date">3-4</td>
-			    </tr>
-			     <tr>	
+                            <td id="date">Project LAB</td>
+                            <td id="date">Project LAB</td>
+				                    <td id="date">MC LAB</td>
+				                    <td id="date">SEC</td>
+				                    <td id="date">SEC</td>
+			                    </tr>
+			                    <tr>	
                            	<td id="date">Saturady</td>
-                                <td id="date">10-11</td>
-                                <td id="date">11-12</td>
-				<td id="date">12-1</td>
-				<td id="date">2-3</td>
-				<td id="date">3-4</td>
-			    </tr>
-			</table>
+                            <td id="date">MC LAB</td>
+                            <td id="date">Computer Network</td>
+				                    <td id="date">Mobile Computing</td>
+				                    <td id="date">Elective</td>
+				                    <td id="date">Computer Network</td>
+			                    </tr>
+			                  </table>
                         </div>
            
 
